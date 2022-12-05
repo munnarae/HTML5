@@ -19,11 +19,12 @@ a {
 
 /* 본문 스타일 */
 body {
-  background: #ffc;
+  color: #212121;
+  background: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, 
-  BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", 
-  "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", 
-  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", 
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* 레이아웃 */
@@ -76,7 +77,11 @@ body {
 
 .member li::before {
   content: "\e800";
-  font-family: "fontello";
+  font-family: fontello;
+}
+
+.member li {
+  text-transform: uppercase;
 }
 
 /* 비주얼 */
