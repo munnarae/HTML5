@@ -39,7 +39,6 @@ body {
 .header{
   background: #fff;
   padding: 0 30px;
-  height: 15vh;
   border-radius: 0 0 15px 15px;
   position: relative;
 
@@ -61,7 +60,6 @@ body {
   right: -10px; */
   /* transfrom 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
   transform: translateX(10px);
-
 }
 
 .member li {
