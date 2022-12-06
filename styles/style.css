@@ -6,18 +6,27 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 /* 링크 스타일 */
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 
 /* 본문 스타일 */
 body {
+  /* em, rem 단위를 사용해보기. 반응형을 작업할 때 주로 사용됨 */
+  font-size: 1.4rem;
   color:#212121;
   background: #ccc;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, 
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", 
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* 레이아웃 */
