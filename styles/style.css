@@ -33,8 +33,8 @@ body {
   /* em, rem 단위를 사용해보기. 반응형을 작업할 때 주로 사용됨 */
   font-size: 1.4rem;
   color:#212121;
-  background: #ccc;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, 
+  background: #ccc; linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  font-family: "Pretendard Variable",s Pretendard, -apple-system, 
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", 
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", 
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -92,8 +92,13 @@ body {
   margin-right: 4px;
 }
 
-/* 매인메뉴 */
+/* 메인메뉴 */
+.navigation {
+  padding-bottom: 80px;
+}
+
 .menu {
+  border-top: 2px solid currentColor;
   background: #e85e2c
   linear-gradient(
     to bottom,
@@ -102,6 +107,21 @@ body {
     #e85e2c 70%,
     #ef9126 100%
   );
+  border-radius: 0 0 5px 5px;
+  display: flow-root;
+  padding-left: 230px;
+}
+
+.menu-item {
+  background-color: aqua;
+  float: left;
+
+}
+
+.sub-menu {
+  background-color: pink;
+  position: absolute;
+  display: none;
 }
 
 /* 비주얼 */
@@ -143,7 +163,7 @@ body {
 }
 /* 푸터 */
 .footer{
-  background: gray;
+  background: #ccc; linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 .footer-inner{
   background: silver;
