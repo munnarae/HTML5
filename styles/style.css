@@ -121,7 +121,7 @@ body {
 .menu-button {
   border: 0;
   background: transparent;
-  padding: 0 23px;
+  padding: 0 18px;
   line-height: 45px;
   font-size: 15px;
   font-weight: 700;
@@ -137,7 +137,6 @@ body {
 .is-active .menu-button::after {
   content: "";
   display: block;
-  background-color: lime;
   border-top: 2px solid #000;
 }
 
