@@ -140,11 +140,18 @@ body {
   border-top: 2px solid #000;
 }
 
-
 .sub-menu {
   background-color: pink;
   position: absolute;
   display: none;
+}
+
+.is-active .sub-menu{
+  display: block;
+}
+
+.sub-menu li {
+  float: left;
 }
 
 /* 비주얼 */
