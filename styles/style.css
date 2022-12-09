@@ -386,6 +386,9 @@ body {
 }
 
 .sign a::before {
+  content: "\e804";
+  font-family: fontello;
+  margin-right: 8px;
   color: orangered;
 }
 
