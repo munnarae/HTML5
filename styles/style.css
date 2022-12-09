@@ -281,9 +281,9 @@ body {
 
 /* 메인 */
 .main {
+  display: flow-root;
   background: #fff;
   min-height: 450px;
-  display: flow-root;
   padding: 30px 15px;
   border-radius: 15px 15px 0 0;
 }
@@ -330,24 +330,17 @@ body {
 
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
 
-.sign {
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  padding: 0 10px 10px 10px;
-}
-
-.user-email {
-  background-color: skyblue;
+.user-email,
+.user-pw  {
+  margin-bottom: 5px;
 } 
 
-.user-pw {
-  background-color: lime;
-}
 
 .login-form label {
-  background-color:salmon;
   display: inline-block;
   width: 4em;
 }
@@ -356,12 +349,43 @@ body {
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
 }
 
 .login-button {
   position: absolute;
   top: 0;
   right: 0;
+  height: 53px;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+.sign a::before {
+  content: "\e804";
+  font-family: fontello;
+  margin-right: 8px;
+  color: orangered;
 }
 
 
