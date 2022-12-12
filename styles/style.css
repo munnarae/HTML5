@@ -1,6 +1,7 @@
 @import url(./fonts.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend {
