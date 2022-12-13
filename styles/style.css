@@ -1,7 +1,6 @@
-@import url(./fonts.css);
+@import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
-@import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend {
@@ -485,11 +484,6 @@ body {
   flex-flow: row nowrap;
 
 }
-.form-group-label::before {
-  content: "\e803";
-  font-family: "fontello";
-  padding-right: 5px;
-}
 
 .form-group {
   flex-grow: 1;
@@ -590,6 +584,66 @@ body {
 
 .icon-plus::before {
   color: hsla(110, 50%, 30%, 1);
+}
+
+/* 새소식 */
+.news {
+  margin-top: 20px;
+  position: relative;
+}
+
+.news-title {
+  color:#e85e2c;
+  font-style: 1.5rem;
+  font-weight: 700;
+}
+
+.news::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background: #aaa linear-gradient(to right, #ccc,#fff);
+}
+
+.news-link {
+  display: block;
+}
+
+.news-item {
+  margin-top: 35px;
+  padding-left: 130px;
+  position: relative;
+}
+
+.news-item-title {
+  font-weight: 500;
+}
+
+.news-item-date {
+  display: block;
+  margin: 5px 0 10px;
+}
+
+.news-item-brief {
+  line-height: 1.5;
+}
+
+.news-item-thumbnail {
+  position: absolute;
+  top: 2px;
+  left :0;
+  text-align: center;
+}
+
+.news-more  {
+  position: absolute;
+  /* 패딩8 top-8 right-8을 준 이유는 좀더 링크영역을 넓히기 위함 노인들의 배려도 추가 */
+  top:-8px;
+  right:-8px;
+  padding: 8px;
 }
 
 
