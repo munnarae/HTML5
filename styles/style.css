@@ -592,12 +592,6 @@ body {
   position: relative;
 }
 
-.news-title {
-  color:#e85e2c;
-  font-style: 1.5rem;
-  font-weight: 700;
-}
-
 .news::before {
   content: "";
   position: absolute;
@@ -608,39 +602,65 @@ body {
   background: #aaa linear-gradient(to right, #ccc,#fff);
 }
 
+.news-title {
+  color:#e85e2c;
+  font-style: 1.5rem;
+  font-weight: 700;
+}
+
+
 .news-link {
   display: block;
 }
 
 .news-item {
   margin-top: 35px;
-  padding-left: 130px;
+  /* padding-left: 130px; */
   position: relative;
+  display: flow-root;
 }
 
 .news-item-title {
   font-weight: 500;
+  width: 250px;
+  float: right;
 }
 
 .news-item-date {
+  /* block을 준이유는 패딩과 마진주기 위해서임 인라인블록을 줘도되지만 
+  날짜 옆에 나란히 둘거 없으니 그냥 블록주신것 */
   display: block;
   margin: 5px 0 10px;
+  width: 250px;
+  float: right;
 }
 
 .news-item-brief {
   line-height: 1.5;
+  width: 250px;
+  float: right;
 }
 
 .news-item-thumbnail {
-  position: absolute;
-  top: 2px;
-  left :0;
-  text-align: center;
+  /* position: absolute;
+  top: 3px;
+  left :0; */
+  /* text-align: center; */
 }
 
+.news-item-thumbnail img {
+  box-shadow: 0 15px 10px 5px #ccc;
+  margin-bottom: 15px;
+ }
+
+ .news-item-thumbnail figcaption {
+  width: 112px;
+  text-align: center;
+ }
+
 .news-more  {
-  position: absolute;
   /* 패딩8 top-8 right-8을 준 이유는 좀더 링크영역을 넓히기 위함 노인들의 배려도 추가 */
+  position: absolute;
   top:-8px;
   right:-8px;
   padding: 8px;
