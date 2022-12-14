@@ -600,14 +600,13 @@ body {
   left: 0;
   width: 80%;
   height: 1px;
-  background: #aaa linear-gradient(to right, #ccc,#fff);
+  background: #aaa linear-gradient(to right, #ccc, #fff);
 }
 
 .news-title {
-  font-style: 1.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
-
 
 .news-link {
   display: block;
@@ -627,14 +626,11 @@ body {
 }
 
 .news-item-date {
-  /* block을 준이유는 패딩과 마진주기 위해서임 인라인블록을 줘도되지만 
-  날짜 옆에 나란히 둘거 없으니 그냥 블록주신것 */
   display: block;
   margin: 5px 0 10px;
   width: 250px;
   float: right;
 }
-
 .news-item-brief {
   line-height: 1.5;
   width: 250px;
@@ -644,24 +640,24 @@ body {
 .news-item-thumbnail {
   /* position: absolute;
   top: 3px;
-  left :0; */
+  left: 0; */
   /* text-align: center; */
 }
 
 .news-item-thumbnail img {
   box-shadow: 0 15px 10px 5px #ccc;
   margin-bottom: 15px;
- }
+}
 
- .news-item-thumbnail figcaption {
+.news-item-thumbnail figcaption {
   width: 112px;
   text-align: center;
- }
+}
 
-.news-more  {
-  /* 패딩8 top-8 right-8을 준 이유는 좀더 링크영역을 넓히기 위함 노인들의 배려도 추가 */
-  top:-8px;
-  right:-8px;
+.news-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
   padding: 8px;
 }
 
@@ -669,7 +665,6 @@ body {
 
 .event {
   border-bottom: 1px solid #aaa;
-  position: relative;
 }
 
 .event-title {
@@ -692,7 +687,7 @@ body {
   height: 18px;
   border: 0;
   padding: 18px 0 0 0;
-  background: url(./images/back_forward.png) no-repeat ;
+  background: url(./images/back_forward.png) no-repeat;
 }
 
 .event-button-next {
@@ -758,16 +753,16 @@ body {
 }
 
 .favorite-list {
+  background-color: yellow;
   list-style-type: none;
+  counter-reset: number;
 }
 
 .favorite-list li {
   margin-top: 10px;
   counter-increment: number;
   background-color: pink;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  position: relative;
 }
 
 .favorite-list li::before {
@@ -783,19 +778,17 @@ body {
   line-height: 1.5;
 }
 
-.favorite-list a {
-  background-color: aqua;
-  /* flex-grow: 1; */
-}
-
-.up, 
-.stop, 
+.up,
+.stop,
 .down {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
   width: 20px;
   height: 11px;
   margin-left: auto;
-  background: lime url(./images/rank.png) no-repeat 100% 0;
+  background: lime url("./images/rank.png") no-repeat 100% 0;
 }
 
 .stop {
