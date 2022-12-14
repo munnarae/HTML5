@@ -102,14 +102,29 @@ body {
   margin-top: 20px;
 }
 
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+}
+
+.event-title {
+  /* background: pink; */
+}
+
 .event-button-wrapper {
-  background-color: yellow;
-  overflow: hidden;
-  padding: 4px;
-  /* height: 20px;
+  /* background-color: yellow;
+  overflow: hidden; */
+  /* padding: 2px; */
   display: flex;
   flex-flow: row nowrap;
-  align-items: center; */
+  align-items: flex-start;
+  gap: 15px;
+}
+
+#eventDetail {
+  /* background-color: aquamarine; */
 }
 
 .event-button {
@@ -117,7 +132,6 @@ body {
   border: 0;
   height: 18px;
   padding: 0;
-  text-indent: -9999px;
   background: aqua url("./images/back_forward.png") no-repeat;
 }
 
@@ -133,6 +147,10 @@ body {
 .event-thumbnail img {
   border: 1px solid #aaa;
   box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.related {
+  margin-top: 10px;
 }
 
 /* 인기 사이트 */
